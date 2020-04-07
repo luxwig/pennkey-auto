@@ -16,5 +16,5 @@
     "js":        ["inject.js"]
   }],
   "permissions": ["https://weblogin.pennkey.upenn.edu/"],
-  "homepage_url": "http://www.google.com"
+  "homepage_url": "http://www.github.com/luxwig"
 }

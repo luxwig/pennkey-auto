@@ -1,7 +1,7 @@
 {
-  "name": "Columbia Auto UNI",
-  "version": "1.8",
-  "description": "Auto-completes Columbia UNI logins",
+  "name": "PennKey Auto Login",
+  "version": "1.0",
+  "description": "Auto-completes PennKey logins",
   "manifest_version": 2,
   "icons": {
     "16": "icon16.png",
@@ -12,17 +12,9 @@
   "background": { "scripts": ["background.js"] },
   "content_scripts": [{
     "all_frames": true,
-    "matches":   ["https://wind.columbia.edu/*",
-                  "https://ssol.columbia.edu/*",
-                  "https://cas.columbia.edu/*",
-                  "https://courseworks.columbia.edu/*",
-                  "https://newcourseworks.columbia.edu/*"],
+    "matches":   ["https://weblogin.pennkey.upenn.edu/*"],
     "js":        ["inject.js"]
   }],
-  "permissions": ["https://wind.columbia.edu/",
-                  "https://ssol.columbia.edu/",
-                  "https://cas.columbia.edu/",
-                  "https://courseworks.columbia.edu/",
-                  "https://newcourseworks.columbia.edu/"],
-  "homepage_url": "http://www.hcs.harvard.edu/vsant/columbia-auto-uni/"
+  "permissions": ["https://weblogin.pennkey.upenn.edu/"],
+  "homepage_url": "http://www.google.com"
 }

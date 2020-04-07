@@ -1,7 +1,6 @@
 chrome.extension.onRequest.addListener(function(request, sender, sendResponse) {
   if (request.method == "getUniPw")
-    sendResponse({uni: localStorage["uni"], pw: localStorage["pw"]});
-  else
+    sendResponse({pennname: localStorage["pennname"], pw: localStorage["pw"]}); else
     sendResponse({});
 });
 

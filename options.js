@@ -1,6 +1,6 @@
 // Saves options to localStorage.
 function save_options(e) {
-  localStorage["uni"] = document.getElementById("uni").value;
+  localStorage["pennname"] = document.getElementById("pennname").value;
   localStorage["pw"]  = document.getElementById("pw").value;
   
   // Update status to let user know options were saved.
@@ -14,14 +14,14 @@ function save_options(e) {
 
 // Restores saved options from localStorage.
 function restore_options() {
-  var data_uni = localStorage["uni"];
-  if (null != data_uni)
-    document.getElementById("uni").value = data_uni;
+  var data_pennname = localStorage["pennname"];
+  if (null != data_pennname)
+    document.getElementById("pennname").value = data_pennname;
   var data_pw = localStorage["pw"];
   if (null != data_pw)
     document.getElementById("pw").value = data_pw;
 
-  document.getElementById("uni").focus();
+  document.getElementById("pennname").focus();
 }
 
 /* When DOM has loaded, restore form values if exist, 
